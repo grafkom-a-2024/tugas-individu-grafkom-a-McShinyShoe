@@ -2,7 +2,7 @@
 
 |Nama|NRP|
 |-|-|
-|Mohamad Valdi Ananda Tauhid|502522123812|
+|Mohamad Valdi Ananda Tauhid|5025221238|
 
 ## Preview
 To see how this looks like, open site in github pages
