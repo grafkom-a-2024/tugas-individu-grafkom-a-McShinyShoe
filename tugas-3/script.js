@@ -53,24 +53,19 @@ function main() {
     scene.add(satellite);
 
     // Lighting
-    const light = new THREE.DirectionalLight(0xddddff, 1);
-    light.position.set(5, 5, 5);
-    scene.add(light);
-
     const sunLight = new THREE.PointLight(0xffdd88, 1.5, 100);
     sunLight.position.set(0, 0, 0);
     scene.add(sunLight);
-
-    const ambientLight = new THREE.AmbientLight(0x000000);
+    const ambientLight = new THREE.AmbientLight(0x08080b);
     scene.add(ambientLight);
 
     // Sun Glow
     const glowTexture = textureLoader.load('glow.png');
     const glowMaterial = new THREE.SpriteMaterial({
-    map: glowTexture,
-    color: 0xffdd88,
-    transparent: true,
-    opacity: 0.5
+        map: glowTexture,
+        color: 0xffffff,
+        transparent: true,
+        opacity: 1
     });
     const glowSprite = new THREE.Sprite(glowMaterial);
     glowSprite.scale.set(20, 20, 1);
